@@ -8,9 +8,9 @@
 #ifndef CONSOLEAPPENDER_H
 #define	CONSOLEAPPENDER_H
 
-#include "IAppender.h"
-#include "IFormatter.h"
-#include "Appender.h"
+#include "../headers/IAppender.h"
+#include "../headers/IFormatter.h"
+#include "../headers/Appender.h"
 
 class ConsoleAppender : public Appender {
 public:

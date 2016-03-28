@@ -35,10 +35,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/ConsoleAppender.o \
-	${OBJECTDIR}/FileAppender.o \
-	${OBJECTDIR}/Logger.o \
-	${OBJECTDIR}/SimpleFormatter.o
+	${OBJECTDIR}/src/ConsoleAppender.o \
+	${OBJECTDIR}/src/FileAppender.o \
+	${OBJECTDIR}/src/Logger.o \
+	${OBJECTDIR}/src/SimpleFormatter.o
 
 
 # C Compiler Flags
@@ -65,25 +65,25 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libLogger.${CND_DLIB_EXT}: ${OBJECTFI
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libLogger.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared
 
-${OBJECTDIR}/ConsoleAppender.o: ConsoleAppender.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/ConsoleAppender.o: src/ConsoleAppender.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ConsoleAppender.o ConsoleAppender.cpp
+	$(COMPILE.cc) -O2  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/ConsoleAppender.o src/ConsoleAppender.cpp
 
-${OBJECTDIR}/FileAppender.o: FileAppender.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/FileAppender.o: src/FileAppender.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FileAppender.o FileAppender.cpp
+	$(COMPILE.cc) -O2  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/FileAppender.o src/FileAppender.cpp
 
-${OBJECTDIR}/Logger.o: Logger.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/Logger.o: src/Logger.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Logger.o Logger.cpp
+	$(COMPILE.cc) -O2  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Logger.o src/Logger.cpp
 
-${OBJECTDIR}/SimpleFormatter.o: SimpleFormatter.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/SimpleFormatter.o: src/SimpleFormatter.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SimpleFormatter.o SimpleFormatter.cpp
+	$(COMPILE.cc) -O2  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/SimpleFormatter.o src/SimpleFormatter.cpp
 
 # Subprojects
 .build-subprojects:

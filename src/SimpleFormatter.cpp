@@ -5,7 +5,7 @@
  * Created on 14 Март 2016, 21:21
  */
 
-#include "SimpleFormatter.h"
+#include "../headers/SimpleFormatter.h"
 
 SimpleFormatter::SimpleFormatter() {
 }

@@ -5,7 +5,7 @@
  * Created on 14 Март 2016, 18:41
  */
 
-#include "ConsoleAppender.h"
+#include "../headers/ConsoleAppender.h"
 
 ConsoleAppender::ConsoleAppender(IFormatter *formatter) : Appender(formatter) { }
 

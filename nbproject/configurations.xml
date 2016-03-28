@@ -13,17 +13,25 @@
       <itemPath>ReportLevel.h</itemPath>
       <itemPath>SimpleFormatter.h</itemPath>
     </logicalFolder>
+    <logicalFolder name="headers" displayName="headers" projectFiles="true">
+      <itemPath>headers/Appender.h</itemPath>
+      <itemPath>headers/ConsoleAppender.h</itemPath>
+      <itemPath>headers/FileAppender.h</itemPath>
+      <itemPath>headers/IAppender.h</itemPath>
+      <itemPath>headers/IFormatter.h</itemPath>
+      <itemPath>headers/Logger.h</itemPath>
+      <itemPath>headers/ReportLevel.h</itemPath>
+      <itemPath>headers/SimpleFormatter.h</itemPath>
+    </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
-      <itemPath>ConsoleAppender.cpp</itemPath>
-      <itemPath>FileAppender.cpp</itemPath>
-      <itemPath>Logger.cpp</itemPath>
-      <itemPath>SimpleFormatter.cpp</itemPath>
+    <logicalFolder name="src" displayName="src" projectFiles="true">
+      <itemPath>src/ConsoleAppender.cpp</itemPath>
+      <itemPath>src/FileAppender.cpp</itemPath>
+      <itemPath>src/Logger.cpp</itemPath>
+      <itemPath>src/SimpleFormatter.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -47,16 +55,15 @@
       </toolsSet>
       <compileType>
         <ccTool>
+          <incDir>
+            <pElem>src</pElem>
+          </incDir>
           <commandLine>-std=c++11</commandLine>
         </ccTool>
       </compileType>
       <item path="Appender.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="ConsoleAppender.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="ConsoleAppender.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="FileAppender.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="FileAppender.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -64,15 +71,35 @@
       </item>
       <item path="IFormatter.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Logger.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="Logger.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ReportLevel.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="SimpleFormatter.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="SimpleFormatter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/Appender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/ConsoleAppender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/FileAppender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/IAppender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/IFormatter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/Logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/ReportLevel.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/SimpleFormatter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ConsoleAppender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FileAppender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Logger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SimpleFormatter.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="2">
@@ -97,11 +124,7 @@
       </compileType>
       <item path="Appender.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="ConsoleAppender.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="ConsoleAppender.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="FileAppender.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="FileAppender.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -109,15 +132,35 @@
       </item>
       <item path="IFormatter.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Logger.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="Logger.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ReportLevel.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="SimpleFormatter.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="SimpleFormatter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/Appender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/ConsoleAppender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/FileAppender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/IAppender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/IFormatter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/Logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/ReportLevel.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/SimpleFormatter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ConsoleAppender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FileAppender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Logger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SimpleFormatter.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

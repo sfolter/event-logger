@@ -48,7 +48,7 @@
 MKDIR=mkdir
 CP=cp
 CCADMIN=CCadmin
-
+CND_BASEDIR=src/
 
 # build
 build: .build-post
